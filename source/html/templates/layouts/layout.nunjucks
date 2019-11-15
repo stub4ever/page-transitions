@@ -48,7 +48,6 @@
 
 		{% include 'partials/header.nunjucks' %} 
 	    {% block content %}
-		
 		{% endblock %}
 		{% include 'partials/footer.nunjucks' %} 
 	

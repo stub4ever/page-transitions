@@ -1,15 +1,17 @@
 {% extends 'layouts/layout.nunjucks' %}
 
 {% block content %}
-    <section class="feed">
-        <img src="/img/image2.jpg">
-        <img src="/img/image3.jpg">
-        <img src="/img/image4.jpg">
-        <img src="/img/image5.jpg">
-        <img src="/img/image6.jpg">
-        <img src="/img/image7.jpg">
-        <img src="/img/image8.jpg">
-        <img src="/img/image9.jpg">
-        <img src="/img/image10.jpg">
-    </section>
+    <main data-barba="wrapper">
+        <section data-barba="container" class="feed">
+            <img src="/img/image2.jpg">
+            <img src="/img/image3.jpg">
+            <img src="/img/image4.jpg">
+            <img src="/img/image5.jpg">
+            <img src="/img/image6.jpg">
+            <img src="/img/image7.jpg">
+            <img src="/img/image8.jpg">
+            <img src="/img/image9.jpg">
+            <img src="/img/image10.jpg">
+        </section>
+    </main>
 {% endblock %}    

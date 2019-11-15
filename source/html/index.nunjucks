@@ -1,7 +1,12 @@
 {% extends 'layouts/layout.nunjucks' %}
 
 {% block content %}
-    <section>
-    	<img src="img/home.jpg" class="full full-img">
-    </section>
+	<!-- https://barba.js.org/docs/v2/user/core.html -->
+	<main data-barba="wrapper">
+		<section data-barba="container">
+			<!-- put here the content you wish to change
+    		between your pages, like your main content <h1> or <p> -->
+			<img src="img/home.jpg" class="full full-img">
+		</section>
+	</main>
 {% endblock %}    

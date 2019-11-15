@@ -4,6 +4,8 @@ node_modules
 /public/js
 /components/_icons.hbs
 s3_website.yml
+dist
+/dist
 
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #
