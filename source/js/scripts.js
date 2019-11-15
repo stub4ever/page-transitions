@@ -5,6 +5,10 @@ import Util from "./utils/Util";
 
 import imagesLoaded from 'imagesloaded';
 
+import barba from './vendor/barba';
+import barbaCss from './vendor/barba-css';
+
+
 // document.addEventListener('lazybeforeunveil', function(e){
 //     var bg = e.target.getAttribute('data-bg');
 //     if(bg){
@@ -14,12 +18,12 @@ import imagesLoaded from 'imagesloaded';
 
 imagesLoaded( document.body, function() {        
     // Remove loading class from body 
-    const loadingWrapper = document.querySelector('.loading__wrapper');
-    if(Util.hasClass(document.body,'loading')) {
-        Util.removeClass(loadingWrapper, 'is--visible');
-        Util.addClass(loadingWrapper, 'is--invisible');
-        Util.removeClass(document.body, 'loading');
-    }    
+    // const loadingWrapper = document.querySelector('.loading__wrapper');
+    // if(Util.hasClass(document.body,'loading')) {
+    //     Util.removeClass(loadingWrapper, 'is--visible');
+    //     Util.addClass(loadingWrapper, 'is--invisible');
+    //     Util.removeClass(document.body, 'loading');
+    // }    
 });
 
 

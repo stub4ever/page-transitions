@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Ortica";
     font-weight: 700;
-    src: url(ortica-bold.woff2), url(ortica-bold.woff);
+    src: url(/fonts/ortica-bold.woff2), url(/fonts/ortica-bold.woff);
 }
 
 @font-face {
     font-family: "Ortica";
-    font-weight: 400;
-    src: url(ortica-light.woff2), url(ortica-light.woff);
+    font-weight: 400; 
+    src: url(/fonts/ortica-light.woff2), url(/fonts/ortica-light.woff);
 }
 
 :root {
