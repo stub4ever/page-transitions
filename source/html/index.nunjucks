@@ -1,0 +1,7 @@
+{% extends 'layouts/layout.nunjucks' %}
+
+{% block content %}
+    <section>
+    	<img src="img/home.jpg" class="full full-img">
+    </section>
+{% endblock %}    

@@ -1,0 +1,39 @@
+// --------------------------------
+
+// Display
+
+// --------------------------------
+
+.block { display: block !important; }
+.inline-block { display: inline-block !important; }
+.inline { display: inline !important; }
+
+@include breakpoint(xs) {
+    .block\@xs { display: block !important; }
+    .inline-block\@xs { display: inline-block !important; }
+    .inline\@xs { display: inline !important; }
+}
+
+@include breakpoint(sm) {
+    .block\@sm { display: block !important; }
+    .inline-block\@sm { display: inline-block !important; }
+    .inline\@sm { display: inline !important; }
+}
+
+@include breakpoint(md) {
+    .block\@md { display: block !important; }
+    .inline-block\@md { display: inline-block !important; }
+    .inline\@md { display: inline !important; }
+}
+
+@include breakpoint(lg) {
+    .block\@lg { display: block !important; }
+    .inline-block\@lg { display: inline-block !important; }
+    .inline\@lg { display: inline !important; }
+}
+
+@include breakpoint(xl) {
+    .block\@xl { display: block !important; }
+    .inline-block\@xl { display: inline-block !important; }
+    .inline\@xl { display: inline !important; }
+}

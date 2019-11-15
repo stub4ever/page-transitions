@@ -1,0 +1,35 @@
+//
+// Border-radius
+//
+
+.border { border: 1px solid var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.border-top { border-top: 1px solid var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.border-bottom { border-bottom: 1px solid var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.border-left { border-left: 1px solid var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.border-right { border-right: 1px solid var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.border-2 { border-width: 2px; }
+
+.border-primary { border-color: var(--color-primary) !important; }
+.border-contrast-lower { border-color: var(--color-contrast-lower, hsl(0, 0%, 95%)); }
+.border-contrast-medium { border-color: var(--color-contrast-medium, hsl(240, 1%, 48%)); }
+
+
+.has-no-border {
+  border: none !important;
+}
+
+@include breakpoint(sm, "not all") {
+  .has-border\@sm { border: none !important; }
+}
+
+@include breakpoint(md) {
+  .has-no-border\@sm { border: none !important; }
+}
+
+@include breakpoint(md, "not all") {
+  .has-border\@md { border: none !important; }
+}
+
+@include breakpoint(md) {
+  .has-no-border\@md { border: none !important; }
+}

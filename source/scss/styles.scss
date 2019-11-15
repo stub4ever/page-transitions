@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+/**
+* [replace with theme name] | Built with Slate
+*/
+@import "./_core/core";
+
+// 1-SETTINGS - The preprocessor variables are the globally-available settings or configuration switches for our project.
+// @import "./variables"; // Update styling dynamic later
+@import "1-settings/_setting.breakpoints";
+@import "1-settings/_setting.colors";
+@import "1-settings/_setting.icons";
+@import "1-settings/_setting.layout-size";
+@import "1-settings/_setting.shared-styles";
+@import "1-settings/_setting.spacing";
+@import "1-settings/_setting.typography";
+@import "1-settings/_setting.z-index";
+
+// 2-TOOLS - Includes all the public mixins, keyframes, and helper functions etc. These globally-available tools should make our development flow easier.
+@import "./2-tools/mixins";
+@import "./2-tools/functions";
+
+// 3-GENERIC - The ground zero styles. They are low-specificity and far reaching. Think about resets and normalizing our styles for cross-browser compatibility.
+// @import "3-generic/_generic.*";
+@import "3-generic/_generic.superhi.scss";
+
+// 4-BASE - Unclassed HTML elements. This is the last layer where we use type selectors. Anything necessary to style raw elements goes in here. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+@import "4-base/_base.btn";
+@import "4-base/_base.colors";
+@import "4-base/_base.form";
+@import "4-base/_base.icon"; 
+@import "4-base/_base.typography";
+
+// 5-OBJECTS - Object oriented CSS. Begin using classes exclusively for agnostically named noncosmetic design patterns. This layer is mostly layout-driven.
+// @import '5-objects/_object.*';
+
+// 6-COMPONENTS - Explicitly named designed pieces of UI. The cosmetic layer, includes more specific styling instructions.
+// @import "./6-components/_component.*;
+
+// 7-SECTIONS - Consists out of components grouped together. They rely entirely on nesting, so make sure people are aware of this.
+// @import "./7-sections/_component.*;
+
+// 8-TEMPLATES - Consists out of components and sections grouped together. They rely entirely on nesting, so make sure people are aware of this.
+// @import "./8-templates/_component.*;
+
+// 9-UTILS - These are the utility classes carrying !important that affect one piece of the DOM at a time
+// @import '9-utils/_util.*';
+
+// 10-TRUMPS - Parking nasty nested overrides to move on and fix later (hacks, Third-libraries)
+// @import '10-trumps/_override.*';

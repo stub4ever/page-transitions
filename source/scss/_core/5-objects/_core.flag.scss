@@ -1,0 +1,124 @@
+/////////////////////////
+//
+// OBJECTS.FLAG
+//
+// * The flag object is a design pattern similar to the media object, however it
+// utilises `display: table[-cell];` to give us control over the vertical
+// alignments of the text and image.
+//
+// http://csswizardry.com/2013/05/the-flag-object
+//
+// Markup:
+// <div class="flag  flag--top">
+//    <div class="flag__img box">
+//        <img src="https://picsum.photos/300/300" alt="">
+//    </div>
+//     <div class="flag__body box">
+//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, modi!</p>
+//     </div>
+// </div>
+//
+/////////////////////////
+
+/* 1. Allows us to control vertical alignments.
+* 2. Force the object to be the full width of its parent. Combined with [1],
+*    this makes the object behave in a quasi-`display: block;` manner.
+* 3. Reset inherited `border-spacing` declarations.
+*/
+
+.flag {
+  display: table; /* [1] */
+  width: 100%; /* [2] */
+  border-spacing: 0; /* [3] */
+}
+
+/**
+* Items within a flag object. There should only ever be one of each.
+*
+* 1. Default to aligning content to their middles.
+*/
+
+.flag__img,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle; /* [1] */
+}
+
+/**
+* Flag images have a space between them and the body of the object.
+*
+* 1. Force `.flag__img` to take up as little space as possible:
+*    https://pixelsvsbytes.com/2012/02/this-css-layout-grid-is-no-holy-grail/
+*/
+
+.flag__img {
+  width: 1px; /* [1] */
+  padding-right: var(--component-padding);
+
+  /**
+    * 1. Fixes problem with images disappearing.
+    */
+
+  > img {
+    max-width: none; /* [1] */
+  }
+}
+
+/**
+* The container for the main content of the flag object.
+*
+* 1. Forces the `.flag__body` to take up all remaining space.
+*/
+
+.flag__body {
+  width: auto; /* [1] */
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Reversed flag.
+========================================================================== */
+
+/**
+* 1. Swap the rendered direction of the object…
+* 2. …and reset it.
+* 3. Reassign margins to the correct sides.
+*/
+
+.flag--reverse {
+  direction: rtl; /* [1] */
+
+  > .flag__img,
+  > .flag__body {
+    direction: ltr; /* [2] */
+  }
+
+  > .flag__img {
+    padding-right: 0; /* [3] */
+    padding-left: var(--component-padding); /* [3] */
+  }
+}
+
+/* Alignment variants.
+========================================================================== */
+
+/**
+* Vertically align the image- and body-content differently. Defaults to middle.
+*/
+
+.flag--top {
+  > .flag__img,
+  > .flag__body {
+    vertical-align: top;
+  }
+}
+
+.flag--bottom {
+  > .flag__img,
+  > .flag__body {
+    vertical-align: bottom;
+  }
+}

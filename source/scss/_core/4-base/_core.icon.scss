@@ -1,0 +1,98 @@
+
+//
+// ICON
+//
+
+.icon {
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  line-height: 1;
+  flex-shrink: 0;
+  vertical-align: middle;
+  transition: fill 0.25s;
+}
+
+.icon-wrapper {
+  background: var(--color-accent);
+  padding: var(--space-xxs);
+  border-radius: 50%;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  // margin-right: var(--space-xxxs);
+  margin-bottom: var(--space-xxs);
+}
+
+.icon-wrapper--sm {
+  padding: var(--space-xxxs);
+}
+
+.icon-wrapper--line-center::before,
+.icon-wrapper--line-center::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: var(--color-contrast-low);
+  position: absolute;
+  top: 50%;
+  width: 50vw;
+}
+
+.icon-wrapper--line-center::before {
+  right: 100%;
+}
+
+.icon-wrapper--line-center::after {
+  left: 100%;
+}
+
+.icon-wrapper--primary {
+  background-color: var(--color-primary);
+  
+  .icon {
+    color: var(--color-white);
+  }
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+// icon size
+.icon--xxs { font-size: var(--icon-xxs); }
+.icon--xs { font-size: var(--icon-xs); }
+.icon--sm { font-size: var(--icon-sm); }
+.icon--md { font-size: var(--icon-md); }
+.icon--lg { font-size: var(--icon-lg); }
+.icon--xl { font-size: var(--icon-xl); }
+.icon--xxl { font-size: var(--icon-xxl); }
+
+.icon--is-spinning { // rotate the icon infinitely
+  animation: icon-spin 1s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// --------------------------------
+
+// SVG <symbol>
+
+// --------------------------------
+
+// enable icon color corrections
+.icon use {
+  color: inherit;
+  fill: currentColor;
+}

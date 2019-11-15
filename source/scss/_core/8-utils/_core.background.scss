@@ -1,0 +1,20 @@
+// --------------------------------
+
+// Background
+
+// --------------------------------
+
+.bg-inherit { background-color: inherit !important; }
+.bg { background-color: var(--color-bg, hsl(0, 0%, 100%)) !important; }
+.bg-contrast-lower { background-color: var(--color-contrast-lower, hsl(0, 0%, 95%)) !important; }
+.bg-contrast-low { background-color: var(--color-contrast-low, hsl(240, 1%, 83%)) !important; }
+.bg-contrast-medium { background-color: var(--color-contrast-medium, hsl(240, 1%, 48%)) !important; }
+.bg-contrast-high { background-color: var(--color-contrast-high, hsl(240, 4%, 20%)) !important; }
+.bg-contrast-higher { background-color: var(--color-contrast-higher, hsl(240, 8%, 12%)) !important; }
+.bg-primary { background-color: var(--color-primary, hsl(220, 90%, 56%)) !important; }
+.bg-accent { background-color: var(--color-accent, hsl(355, 90%, 61%)) !important; }
+.bg-success { background-color: var(--color-success, hsl(94, 48%, 56%)) !important; }
+.bg-warning { background-color: var(--color-warning, hsl(46, 100%, 61%)) !important; }
+.bg-error { background-color: var(--color-error, hsl(355, 90%, 61%)) !important; }
+.bg-white { background-color: var(--color-white, white) !important; }
+.bg-black { background-color: var(--color-black, black) !important; }

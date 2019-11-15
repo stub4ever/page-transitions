@@ -1,0 +1,65 @@
+/////////////////////////
+//
+// OBJECTS.PACK
+//
+// * The pack object simply causes any number of elements pack up horizontally to <br>
+// automatically fill an equal, fluid width of their parent.
+//
+// Markup:
+// <div class="pack">
+//     <div class="pack__item"></div>
+//     <div class="pack__item"></div>
+// </div>
+//
+/////////////////////////
+
+/**
+*
+* 1. Fill all available space.
+* 2. Remove any leftover styling from lists.
+* 3. Cause children to be automatically equally sized.
+*/
+
+.pack {
+  width: 100%; /* [1] */
+  margin-left: 0; /* [2] */
+  display: table;
+  table-layout: fixed; /* [3] */
+}
+
+/**
+* 1. Cause children to adopt table-like structure.
+* 2. Default item alignment is with the tops of each other.
+*/
+
+.pack__item {
+  display: table-cell; /* [1] */
+  vertical-align: top; /* [2] */
+
+  // Vertical alignment variants.
+
+  .pack--middle > & {
+    vertical-align: middle;
+  }
+
+  .pack--bottom > & {
+    vertical-align: bottom;
+  }
+}
+
+// Unequal-width items.
+
+.pack--auto {
+  table-layout: auto;
+}
+
+/* Reversed order packs
+========================================================================== */
+
+.pack--reverse {
+  direction: rtl;
+
+  > .pack__item {
+    direction: ltr;
+  }
+}

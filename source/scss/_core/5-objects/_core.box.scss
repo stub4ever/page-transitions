@@ -1,0 +1,17 @@
+/////////////////////////
+//
+// OBJECTS.BOX
+//
+// By default it has a half gutter to stack with section__inner or core settings variable
+// <div class="section">
+//     <div class="section__inner section__inner--space-4">
+//          <div class="box box--space-4"></div>
+//     </div>
+// </div>
+//
+/////////////////////////
+
+.box {
+  min-height: 1px;
+  padding: calc((var(--component-padding) *1));
+}

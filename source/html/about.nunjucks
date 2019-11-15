@@ -1,0 +1,19 @@
+{% extends 'layouts/layout.nunjucks' %}
+
+{% block content %}
+<section>
+  <div class="split">
+    <img src="/img/about.jpg" class="full-img sticky">
+  </div>
+  
+  <div class="split">
+    <p>Ava Sherry (°1984, London, United Kingdom) makes photos, photos and media art. With a subtle minimalistic approach, Sherry creates work in which a fascination with the clarity of content and an uncompromising attitude towards conceptual and minimal art can be found. The work is aloof and systematic and a cool and neutral imagery is used.</p>
+    
+    <p>Her photos doesn’t reference recognisable form. The results are deconstructed to the extent that meaning is shifted and possible interpretation becomes multifaceted. By applying abstraction, she creates intense personal moments masterfully created by means of rules and omissions, acceptance and refusal, luring the viewer round and round in circles.</p>
+    
+    <p>Her works are on the one hand touchingly beautiful, on the other hand painfully attractive. Again and again, the artist leaves us orphaned with a mix of conflicting feelings and thoughts. By manipulating the viewer to create confusion, she often creates several practically identical works, upon which thoughts that have apparently just been developed are manifested: notes are made and then crossed out again, ‘mistakes’ are repeated.</p>
+    
+    <p>Her practice provides a useful set of allegorical tools for manoeuvring with a pseudo-minimalist approach in the world of photography: these meticulously planned works resound and resonate with images culled from the fantastical realm of imagination. Ava Sherry currently lives and works in New York.</p>
+  </div>
+</section>
+{% endblock %}    

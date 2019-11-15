@@ -1,0 +1,105 @@
+{% extends 'layouts/layout-styleguide.nunjucks' %}
+
+{% block content %}
+{% import 'macros/nav-styleguide-macro.nunjucks' as nav %}
+{{ nav.activeMenuLink('typography') }}
+
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom--xs margin-bottom-md">Global Headings</h2>
+    
+    <div class="section__inner">
+        <article class="text-component text-center">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+        </article>
+    </div>
+</section>
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom--xs margin-bottom-md">Global Text</h2>
+    
+    <div class="section__inner">
+        <article class="text-component">
+            <p>Default</p> 
+            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt necessitatibus distinctio accusamus reprehenderit cupiditate et, iusto, dicta quo odio quis omnis natus ea veniam, similique fugit quia consequatur enim!</p>
+            <p class="text-sm">Small</p> 
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt necessitatibus distinctio accusamus reprehenderit cupiditate et, iusto, dicta quo odio quis omnis natus ea veniam, similique fugit quia consequatur enim!</p>
+            <p class="text-xs">Extra Small</p> 
+            <p class="text-xs">Extra small Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt necessitatibus distinctio accusamus reprehenderit cupiditate et, iusto, dicta quo odio quis omnis natus ea veniam, similique fugit quia consequatur enim!</p>
+            
+            <blockquote class="">blockquote</blockquote> 
+            <blockquote>(blockquote) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptatem, asperiores tenetur vel animi minima iusto rem reprehenderit blanditiis ducimus?</blockquote>
+        </article>
+    </div>
+</section>
+
+<section class="section margin-bottom-lg" data-section-name="styleguide">
+    <div class="section__inner">
+        <article class="text-component">
+            <h1>Heading 1</h1>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi, voluptate temporibus, voluptas dicta repudiandae aperiam tenetur, delectus laborum <a href="#0">this is a link</a> nobis nostrum consectetur error perspiciatis. Cum laudantium velit provident veritatis corrupti reiciendis iure, architecto ab perferendis, laboriosam voluptatum minima vero.</p>
+            
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/placeholder-landscape.png" alt="Placeholder">
+                <figcaption>Just a placeholder</figcaption>
+            </figure>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt necessitatibus distinctio accusamus reprehenderit cupiditate et, iusto, dicta quo odio quis omnis natus ea veniam, similique fugit quia consequatur enim!</p>
+            
+            <h2>Heading 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi, voluptate temporibus, voluptas dicta quibusdam iste dolores repudiandae aperiam tenetur, delectus <s>content no longer accurate</s> consectetur error perspiciatis. Cum laudantium velit provident veritatis corrupti reiciendis iure, architecto ab perferendis, laboriosam voluptatum minima vero.</p>
+            
+            <p><a href="#0" class="btn btn--primary">Button</a></p>
+            
+            <blockquote>(blockquote) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt voluptatem, asperiores tenetur vel animi minima iusto rem reprehenderit blanditiis ducimus?</blockquote>
+            
+            <p class="drop-cap">Lorem ipsum dolor sit amet consectetur adipisicing elit. <mark>This is highlighted text</mark> iste dolores repudiandae aperiam tenetur, delectus laborum nobis nostrum consectetur error perspiciatis. Cum laudantium velit provident veritatis corrupti reiciendis iure, architecto ab perferendis, laboriosam voluptatum minima vero.</p>
+            
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/placeholder-portrait.png" alt="Placeholder">
+                <figcaption>Just a placeholder</figcaption>
+            </figure>
+            
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur, in iste non alias quas ratione laboriosam ea voluptatem numquam explicabo ut! Beatae quisquam hic nihil autem obcaecati, labore placeat.</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ul>
+            
+            <hr>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eligendi eaque enim voluptates ipsa sit dignissimos? Odio, consequuntur ex! Quis error cupiditate architecto odio perspiciatis provident reprehenderit atque ullam earum.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eligendi eaque enim voluptates ipsa sit dignissimos? Odio, consequuntur ex! Quis error cupiditate architecto odio perspiciatis provident reprehenderit atque ullam earum.</p>
+            
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/placeholder-landscape.png" alt="Placeholder">
+                <figcaption>Just a placeholder</figcaption>
+            </figure>
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi, voluptate temporibus, voluptas dicta quibusdam iste dolores repudiandae aperiam tenetur, delectus laborum nobis nostrum consectetur error perspiciatis. Cum laudantium velit provident veritatis corrupti reiciendis iure, architecto ab perferendis, laboriosam voluptatum minima vero.</p>
+            
+            <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur, in iste non alias quas ratione laboriosam ea voluptatem numquam explicabo ut! Beatae quisquam hic nihil autem obcaecati, labore placeat.</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+                <li>Lorem ipsum dolor sit amet consectetur</li>
+            </ol>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illo molestias eius quidem iusto rem voluptatem, quis atque dolores mollitia maiores consequuntur totam quae eligendi ratione harum fugit architecto quibusdam vitae unde laboriosam excepturi placeat.</p>
+            
+            <h4>Heading 4</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi, voluptate temporibus, voluptas dicta quibusdam iste dolores repudiandae aperiam tenetur, delectus laborum nobis nostrum consectetur error perspiciatis. Cum laudantium velit provident veritatis corrupti reiciendis iure, architecto ab perferendis, laboriosam voluptatum minima vero.</p>
+            <figure>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/placeholder-square-small.png" alt="Placeholder">
+                <figcaption>Just a placeholder</figcaption>
+            </figure>                
+        </article>
+    </div>
+    
+    
+</section>
+
+{% endblock %}   

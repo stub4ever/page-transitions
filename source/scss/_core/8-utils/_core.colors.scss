@@ -1,0 +1,20 @@
+// --------------------------------
+
+// Color
+
+// --------------------------------
+
+.color-inherit { color: inherit!important; }
+.color-bg { color: var(--color-bg, hsl(0, 0%, 100%))!important; }
+.color-contrast-lower { color: var(--color-contrast-lower, hsl(0, 0%, 95%))!important; }
+.color-contrast-low { color: var(--color-contrast-low, hsl(240, 1%, 83%))!important; }
+.color-contrast-medium { color: var(--color-contrast-medium, hsl(240, 1%, 48%))!important; }
+.color-contrast-high { color: var(--color-contrast-high, hsl(240, 4%, 20%))!important; }
+.color-contrast-higher { color: var(--color-contrast-higher, hsl(240, 8%, 12%))!important; }
+.color-primary { color: var(--color-primary, hsl(220, 90%, 56%))!important; }
+.color-accent { color: var(--color-accent, hsl(355, 90%, 61%))!important; }
+.color-success { color: var(--color-success, hsl(94, 48%, 56%))!important; }
+.color-warning { color: var(--color-warning, hsl(46, 100%, 61%))!important; }
+.color-error { color: var(--color-error, hsl(355, 90%, 61%))!important; }
+.color-white { color: var(--color-white, white)!important; }
+.color-black { color: var(--color-black, black)!important; }

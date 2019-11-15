@@ -1,0 +1,16 @@
+{% extends 'layouts/layout-styleguide.nunjucks' %}
+
+{% block content %}
+{% import 'macros/nav-styleguide-macro.nunjucks' as nav %}
+{{ nav.activeMenuLink('components') }}
+
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">    
+    <h2 class="text-center margin-bottom-xs margin-bottom">Components</h2>
+    <div class="section__inner">
+    </div>
+</section>
+
+
+
+{% endblock %}   

@@ -1,0 +1,224 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  font: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+// 2. Change the default font family in all browsers.
+// 3. Correct the line height in all browsers.
+// 4. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+// 5. Setting @viewport causes scrollbars to overlap content in IE11 and Edge, so
+//    we force a non-overlapping, non-auto-hiding scrollbar to counteract.
+
+html {
+
+  // you can apply this to the container of your scrolling section
+  // scroll-behavior: smooth;
+
+  box-sizing: border-box; // 1
+  font-family: sans-serif; // 2
+  line-height: 1.15; // 3
+  -webkit-text-size-adjust: 100%; // 4
+  -ms-text-size-adjust: 100%; // 4
+  -ms-overflow-style: scrollbar; // 5
+  overflow-x: hidden;
+  // Force scrollbars to always be visible to prevent awkward ‘jumps’ when navigating between pages that do/do not have enough content
+  overflow-y: scroll;
+
+  // Fill the whole browser. Necessary when the body is smaller than the browser,
+  // but wants to fill the whole page using min-height.
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  margin: 0; //  Remove the margin in all browsers.
+
+  // Set the min-height to 100% to fill the whole page with a
+  // gradient when the body has a background gradient.
+  min-height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main,
+form legend {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+button,
+input,
+textarea,
+select {
+  margin: 0;
+}
+
+select.form-control::-ms-expand {
+  display: none; // hide Select default icon on IE
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+input::-ms-clear {
+  display: none; // hide X icon in IE and Edge
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.3s;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+span {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+
+  &:-webkit-autofill {
+    box-shadow: none;
+  }
+}

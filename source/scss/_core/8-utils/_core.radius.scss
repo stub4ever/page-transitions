@@ -1,0 +1,33 @@
+// --------------------------------
+
+// Border radius
+
+// --------------------------------
+
+.radius-sm { border-radius: var(--radius-sm) !important; }
+.radius-md { border-radius: var(--radius-md) !important; }
+.radius-lg { border-radius: var(--radius-lg) !important; }
+
+.radius-top { border-top-left-radius: var(--radius-md) !important; border-top-right-radius: var(--radius-md) !important;}
+.radius-right { border-top-right-radius: var(--radius-md) !important; border-bottom-right-radius: var(--radius-md) !important; }
+.radius-bottom { border-bottom-right-radius: var(--radius-md) !important; border-bottom-left-radius: var(--radius-md) !important; }
+.radius-left { border-top-left-radius: var(--radius-md) !important; border-bottom-left-radius: var(--radius-md) !important; }
+
+.radius-circle { border-radius: 50% !important; }
+
+.has-no-radius { border-radius: 0 !important; }
+@include breakpoint(sm, "not all") {
+    .has-radius\@sm { border: none !important; }
+}
+
+@include breakpoint(md) {
+    .has-no-radius\@sm { border: none !important; }
+}
+
+@include breakpoint(md, "not all") {
+    .has-radius\@md { border: none !important; }
+}
+
+@include breakpoint(md) {
+    .has-no-radius\@md { border: none !important; }
+}

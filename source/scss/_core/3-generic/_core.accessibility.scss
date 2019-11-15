@@ -1,0 +1,44 @@
+.sr-only { // content made available only to screen readers
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+// Skip content to #main
+.skip-to-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -9999;
+
+  &:focus,
+  &:active {
+    color: #fff;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    z-index: 999;
+  }
+}
+
+@mixin srHide {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+@mixin srShow {
+  position: static;
+  clip: auto;
+  clip-path: none;
+}

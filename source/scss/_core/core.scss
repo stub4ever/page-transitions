@@ -1,0 +1,72 @@
+// 1-SETTINGS - The preprocessor variables are the globally-available settings or configuration switches for our project.
+@import '1-settings/core.colors';
+@import '1-settings/core.typography';
+@import '1-settings/core.spacing';
+@import '1-settings/core.layout-size';
+@import '1-settings/core.breakpoints';
+@import '1-settings/core.icons';
+@import '1-settings/core.z-index';
+@import '1-settings/core.shared-styles';
+
+// 2-TOOLS - Includes all the public mixins, keyframes, and helper functions etc. These globally-available tools should make our development flow easier.
+@import '2-tools/mixins/core.breakpoints';
+@import '2-tools/mixins/core.font-face';
+@import '2-tools/mixins/core.fontSmooth';
+@import '2-tools/mixins/core.defineColorHSL';
+@import '2-tools/mixins/core.gradient';
+@import '2-tools/mixins/core.lhCrop';
+@import '2-tools/mixins/core.reset';
+@import '2-tools/mixins/core.triangle';
+@import '2-tools/mixins/core.spaceUnit';
+@import '2-tools/mixins/core.textUnit';
+@import '2-tools/core.functions';
+
+// 3-GENERIC - The ground zero styles. They are low-specificity and far reaching. Think about resets and normalizing our styles for cross-browser compatibility.
+@import '3-generic/core.reboot';
+@import '3-generic/core.accessibility';
+
+// 4-BASE - Unclassed HTML elements. This is the last layer where we use type selectors. Anything necessary to style raw elements goes in here. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+@import '4-base/core.color';
+@import '4-base/core.typography';
+@import '4-base/core.btn';
+@import '4-base/core.form';
+@import '4-base/core.icon';
+
+// 5-OBJECTS - Object oriented CSS. Begin using classes exclusively for agnostically named noncosmetic design patterns. This layer is mostly layout-driven.
+@import '5-objects/core.section';
+@import '5-objects/core.container';
+@import '5-objects/core.grid';
+@import '5-objects/core.box';
+@import '5-objects/core.flag';
+@import '5-objects/core.crop';
+@import '5-objects/core.list-inline';
+@import '5-objects/core.ratio';
+@import '5-objects/core.media';
+@import '5-objects/core.pack';
+@import '5-objects/core.bg-wrapper';
+@import '5-objects/core.media-wrapper';
+
+// 6-COMPONENTS - Explicitly named designed pieces of UI. The cosmetic layer, includes more specific styling instructions.
+
+// 7-LAYOUTS - Consists out of components grouped together. They rely entirely on nesting, so make sure people are aware of this.
+
+// 8-UTILS - These are the utility classes carrying !important that affect one piece of the DOM at a time
+@import '8-utils/core.align';
+@import '8-utils/core.colors';
+@import '8-utils/core.typography';
+@import '8-utils/core.spacing';
+@import '8-utils/core.sizing';
+@import '8-utils/core.flex';
+@import '8-utils/core.block';
+@import '8-utils/core.borders';
+@import '8-utils/core.radius';
+@import '8-utils/core.background';
+@import '8-utils/core.shadow';
+@import '8-utils/core.positions';
+@import '8-utils/core.visibility';
+@import '8-utils/core.shared-styles';
+@import '8-utils/core.float';
+@import '8-utils/core.position';
+@import '8-utils/core.overflow';
+
+// 9-TRUMPS - Parking nasty nested overrides to move on and fix later (hacks, Third-libraries)

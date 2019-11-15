@@ -1,0 +1,12 @@
+{% macro activeMenuLink(page="colors") %}
+<ul class="nav nav-styleguide">
+    <li class="nav-item"><a class="nav-link nav-styleguide__brand" style="color:#FFF; letter-spacing: -.25px; font-size: 20px!important" href="../index.html">TOBY BUI</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'colors' %} active {% endif %}" href="../styleguide/index.html">1. Colors</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'typography' %} active {% endif %}" href="../styleguide/typography.html">2. Typography</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'utilities' %} active {% endif %}" href="../styleguide/utilities.html">3. Utilities</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'ui-elements' %} active {% endif %}" href="../styleguide/ui-elements.html">4. UI Elements&nbsp;</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'components' %} active {% endif %}" href="../styleguide/components.html">5. Components</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'layouts' %} active {% endif %}" href="../styleguide/layouts.html">6. Layouts</a></li>
+    <li class="nav-item"><a class="nav-link {% if page == 'pages' %} active {% endif %}" href="../styleguide/pages.html">7. Pages</a></li>
+</ul>
+{% endmacro %}  

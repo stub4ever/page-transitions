@@ -1,0 +1,206 @@
+{% extends 'layouts/layout-styleguide.nunjucks' %}
+
+{% block content %}
+{% import 'macros/nav-styleguide-macro.nunjucks' as nav %}
+{{ nav.activeMenuLink('colors') }}
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom-xs margin-bottom-md">Global Colors</h2>
+    
+    <div class="section__inner">
+        <div class="styleguide-columns">
+            <div style="background-color: var(--color-primary-darker)"></div>
+            <div style="background-color: var(--color-primary-dark)"></div>
+            <div style="background-color: var(--color-primary)"></div>
+            <div style="background-color: var(--color-primary-light)"></div>
+            <div style="background-color: var(--color-primary-lighter)"></div>
+        </div>
+        <p class="text-xs text-center margin-bottom-xs margin-top-xs">Primary colors</p>
+    </div>
+    
+    <div class="section__inner">
+        <div class="styleguide-columns">
+            <div style="background-color: var(--color-accent-darker)"></div>
+            <div style="background-color: var(--color-accent-dark)"></div>
+            <div style="background-color: var(--color-accent)"></div>
+            <div style="background-color: var(--color-accent-light)"></div>
+            <div style="background-color: var(--color-accent-lighter)"></div>
+        </div>
+        <p class="text-xs text-center margin-bottom-xs margin-top-xs">Accent colors</p>
+    </div>
+    
+    <div class="section__inner">
+        <div class="styleguide-columns">
+            <div style="background-color: var(--color-black)"></div>
+            <div style="background-color: var(--color-black)"></div>
+            <div style="background-color: var(--color-black)"></div>
+            <div style="background-color: var(--color-black-light)"></div>
+            <div style="background-color: var(--color-black-lighter)"></div>
+        </div>
+        <p class="text-xs text-center margin-bottom-xs margin-top-xs">Black colors</p>
+    </div>
+    
+    
+    <div class="section__inner">
+        <div class="styleguide-columns">
+            <div style="background-color: var(--color-white)"></div>
+            <div style="background-color: var(--color-white)"></div>
+            <div style="background-color: var(--color-white)"></div>
+            
+            <div style="background-color: var(--color-white-dark)"></div>
+            <div style="background-color: var(--color-white-darker)"></div>
+        </div>
+        <p class="text-xs text-center margin-bottom-xs margin-top-xs">White colors</p>
+    </div>
+    
+    <div class="section__inner">
+        <div class="styleguide-columns">
+            <div style="background-color: var(--color-bg)"></div>
+            <div style="background-color: var(--color-contrast-lower)"></div>
+            <div style="background-color: var(--color-contrast-low)"></div>
+            <div style="background-color: var(--color-contrast-medium)"></div>
+            <div style="background-color: var(--color-contrast-high)"></div>
+            <div style="background-color: var(--color-contrast-higher)"></div>            
+        </div>
+        <p class="text-xs text-center margin-bottom-xs margin-top-xs ">Contrast colors</p>
+    </div>
+</section>
+
+
+<section class="section" data-section-name="styleguide-themes">
+    <h2 class="text-center margin-bottom-xs margin-bottom-md">Global Themes</h2>
+    
+    <div class="section__inner">
+        <main data-theme="default">
+            <div class="container max-width-sm">
+                <div class="margin-bottom-md">
+                    <div class="text-component">
+                        <h1>The spectacle before us was indeed sublime.</h1>
+                        
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle <a href="#">link</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="margin-bottom-md"> 
+                    <h4 class="margin-bottom-xxs">Forms</h4>
+                    <div>
+                        <label class="form-label" for="inputName">Name:</label>
+                        <input class="form-control" required type="text" name="inputName" id="inputName" placeholder="Enter your full name">
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div>
+                    <h4 class="margin-bottom-xxs">Buttons</h4>
+                    <div class="flex flex-gap--xs">
+                        <button class="btn btn--primary margin-right-xs">Primary</button>
+                        <button class="btn btn--subtle">Subtle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        
+        <main data-theme="dark">
+            <div class="container max-width-sm">
+                <div class="margin-bottom-md">
+                    <div class="text-component">
+                        <h1>The spectacle before us was indeed sublime.</h1>
+                        
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle <a href="#">link</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="margin-bottom-md"> 
+                    <h4 class="margin-bottom-xxs">Forms</h4>
+                    <div>
+                        <label class="form-label" for="inputName">Name:</label>
+                        <input class="form-control" required type="text" name="inputName" id="inputName" placeholder="Enter your full name">
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div>
+                    <h4 class="margin-bottom-xxs">Buttons</h4>
+                    <div class="flex flex-gap--xs">
+                        <button class="btn btn--primary margin-right-xs">Primary</button>
+                        <button class="btn btn--subtle">Subtle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <main data-theme="black">
+            <div class="container max-width-sm">
+                <div class="margin-bottom-md">
+                    <div class="text-component">
+                        <h1>The spectacle before us was indeed sublime.</h1>
+                        
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle <a href="#">link</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="margin-bottom-md"> 
+                    <h4 class="margin-bottom-xxs">Forms</h4>
+                    <div>
+                        <label class="form-label" for="inputName">Name:</label>
+                        <input class="form-control" required type="text" name="inputName" id="inputName" placeholder="Enter your full name">
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div>
+                    <h4 class="margin-bottom-xxs">Buttons</h4>
+                    <div class="flex flex-gap--xs">
+                        <button class="btn btn--primary margin-right-xs">Primary</button>
+                        <button class="btn btn--subtle">Subtle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <main data-theme="accent">
+            <div class="container max-width-sm">
+                <div class="margin-bottom-md">
+                    <div class="text-component">
+                        <h1>The spectacle before us was indeed sublime.</h1>
+                        
+                        <p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle <a href="#">link</a>.</p>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="margin-bottom-md"> 
+                    <h4 class="margin-bottom-xxs">Forms</h4>
+                    <div>
+                        <label class="form-label" for="inputName">Name:</label>
+                        <input class="form-control" required type="text" name="inputName" id="inputName" placeholder="Enter your full name">
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div>
+                    <h4 class="margin-bottom-xxs">Buttons</h4>
+                    <div class="flex flex-gap--xs">
+                        <button class="btn btn--primary margin-right-xs">Primary</button>
+                        <button class="btn btn--subtle">Subtle</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+</section>
+
+{% endblock %}   

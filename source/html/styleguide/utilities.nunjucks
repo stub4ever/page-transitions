@@ -1,0 +1,88 @@
+{% extends 'layouts/layout-styleguide.nunjucks' %}
+
+{% block content %}
+{% import 'macros/nav-styleguide-macro.nunjucks' as nav %}
+{{ nav.activeMenuLink('utilities') }}
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom-md">Global Spacing Scale</h2>
+    
+    <div class="section__inner">
+        <div class="">
+            <div class="styleguide__scale">
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxxxs</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxxxs)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxxs</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxxs)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxs</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxs)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xs</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xs)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-sm</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-sm)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-md</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-md)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-lg</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-lg)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xl</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xl)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxl</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxl)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxxl</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxxl)"></div>
+                <div class="styleguide__item__label">
+                    <div>
+                        <span class="styleguide__item__variable">--space-xxxxl</span>
+                    </div>
+                </div>
+                <div class="styleguide__item__preview" style="width: var(--space-xxxxl)"></div>
+            </div>
+            <div class="margin-top-lg margin-bottom-xs">Component Padding</div>
+            <div class="styleguide__component">
+                <div class="styleguide__component__inner"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}   

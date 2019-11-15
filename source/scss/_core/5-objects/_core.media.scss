@@ -1,0 +1,64 @@
+/////////////////////////
+//
+// OBJECTS.MEDIA
+//
+// * Place any image- and text-like content side-by-side, as per: <br>
+// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code//
+//
+// Markup:
+// <div class="media media--reverse">
+//     <img class="media__img" src="https://unsplash.it/1000/500" alt="">
+//     <div class="media__body">
+//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, modi!</p>
+//     </div>
+// </div>
+//
+/////////////////////////
+
+.media {
+  display: block;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.media__img {
+  float: left;
+  margin-right: var(--component-padding);
+
+  > img {
+    display: block;
+  }
+}
+
+.media__body {
+  // overflow: hidden;
+  display: block;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Reversed media objects
+========================================================================== */
+
+.media--reverse {
+  > .media__img {
+    float: right;
+  }
+}
+
+/* Gutterless media objects
+========================================================================== */
+
+.media--flush {
+  > .media__img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

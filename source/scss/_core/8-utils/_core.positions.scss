@@ -1,0 +1,5 @@
+$positions: static, relative, absolute, fixed, sticky !default;
+// Common values
+@each $position in $positions {
+  .position-#{$position} { position: $position !important; }
+}

@@ -1,0 +1,240 @@
+/////////////////////////
+//
+// OBJECTS.SECTION
+// * section - A wrapper element and can be used to give space between other section. <br>
+// It has by default an full-width, but for some case you can add fixed-with for example wide-screen at 1700px above. <br>
+//
+// * section__inner - A containing element to wrap elements inside a section. It has a fixed width and a half gutter to stack elements that placed with half gutter
+//
+// Markup:
+// <section class="section">
+//     <div class="section__inner"></div>
+// </section>
+//
+// <div class="sections-md-row">
+//     <section class="section section--resize-l"></section>
+//     <section class="section section--resize-r"></section>
+// </div>
+//
+//
+/////////////////////////
+
+.section {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// classes used to center content on x-axis and set content max width
+.section__inner {
+  position: relative;
+  max-width: var(--max-width-md);
+  width: calc(100% - 2 * var(--component-padding));
+  margin-left: auto;
+  margin-right: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  @include breakpoint(sm, 'not all') {
+    max-width: var(--max-width-sm);
+  }
+}
+
+// Section size
+.section--wide .section__inner {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section--sm .section__inner {
+  max-width: var(--max-width-sm);
+}
+
+.section--lg .section__inner {
+  max-width: var(--max-width-lg);
+}
+
+.section__layer-l,
+.section__layer-r {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section__layer-r {
+  left: 0;
+  margin-right: auto;
+}
+
+.section__layer-l {
+  right: 0;
+  margin-left: auto;
+}
+
+// SECTION BACKGROUND-IMAGE
+
+.section__bg {
+  background-size: cover;
+  background-position: center center;
+}
+
+.section__bgTexture {
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+.section__bgTexture,
+.section__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section__bg--fromTop-50 {
+  bottom: auto;
+  height: 50%;
+}
+
+// SECTION WRAPPER
+.sections-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections-lg-row,
+.sections-md-row {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sections-md--mobileReverse,
+.sections-lg--mobileReverse {
+  flex-direction: column-reverse;
+}
+
+@include breakpoint(md) {
+  .sections-md-row {
+    flex-direction: row;
+  }
+
+  .sections-md-row--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .sections-md--mobileReverse {
+    flex-direction: row;
+  }
+
+  // Equalize row of two sections
+  .sections-md-row .section {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .sections-md-row .section--resize-l .section__inner {
+    max-width: calc((var(--max-width-md) *0.5));
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  // Set section left wider
+  .sections-md-row .section--resize-l--wider .section__inner {
+    max-width: var(--max-width-md);
+  }
+
+  .sections-md-row .section--resize-r .section__inner {
+    max-width: calc((var(--max-width-md) *0.5));
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  // Set section right wider
+  .sections-md-row .section--resize-r--wider .section__inner {
+    max-width: var(--max-width-md);
+  }
+
+  .sections-md-row--reverse .section--resize-l .section__inner {
+    margin-left: 0;
+    margin-right: auto;
+    padding-right: var(--component-padding);
+  }
+
+  .sections-md-row--reverse .section--resize-r .section__inner {
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: var(--component-padding);
+  }
+
+  .sections-md-row .section--scale {
+    flex-grow: 2;
+  }
+}
+
+@include breakpoint(lg) {
+  .sections-lg-row {
+    flex-direction: row;
+  }
+
+  .sections-lg-row--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .sections-lg-row--mobileReverse {
+    flex-direction: row;
+  }
+
+  // Equalize row of two sections
+  .sections-lg-row .section {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .sections-lg-row .section--resize-l .section__inner {
+    max-width: calc((var(--max-width-md) *0.5));
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  // Set section left wider
+  .sections-lg-row .section--resize-l--wider .section__inner {
+    max-width: var(--max-width-md);
+  }
+
+  .sections-lg-row .section--resize-r .section__inner {
+    max-width: calc((var(--max-width-md) *0.5));
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  // Set section right wider
+  .sections-lg-row .section--resize-r--wider .section__inner {
+    max-width: var(--max-width-md);
+  }
+
+  .sections-lg-row--reverse .section--resize-l .section__inner {
+    margin-left: 0;
+    margin-right: auto;
+    padding-right: var(--component-padding);
+  }
+
+  .sections-lg-row--reverse .section--resize-r .section__inner {
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: var(--component-padding);
+  }
+
+  .sections-lg-row .section--scale {
+    flex-grow: 2;
+  }
+}

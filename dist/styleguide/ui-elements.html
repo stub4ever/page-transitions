@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Styleguide</title>
+		<meta name="description" content="Enabling my capacity in Creative Industry & Humanism for Tomorrow">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<!--
+			Icons for different devices you can generate with - http://realfavicongenerator.net
+			Place generated files in the dev/static/favicons directory.
+		-->
+		<!-- favicon --> 
+		<link rel="favicon icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="./static/favicon.ico">
+		<!-- end favicon -->
+		 
+		<!-- Social Media -->
+		<meta property='og:title' content='Toby Bui - Going the extra mile' />
+		<meta property='og:type' content='article' />
+		<meta property='og:image' content='/img/thumbnail.png' />
+		<meta property='og:url' content='https://www.tobybui.com/' />
+		<meta property='og:description' content='Enabling my capacity in Creative Industry & Humanism for Tomorrow' />
+		<!-- <meta property='fb:admins' content='USER_ID' /> -->
+		
+		<!-- Twitter Cards -->
+		<meta name='twitter:card' content='summary'>
+		<meta name='twitter:url' content='https://www.tobybui.com/'>
+		<meta name='twitter:title' content='Toby Bui - Going the extra mile'>
+		<meta name='twitter:description' content='Enabling my capacity in Creative Industry & Humanism for Tomorrow'>
+		<meta name='twitter:image' content='./img/thumbnail.png'>
+		
+		<!-- ICONS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+		
+		<script>document.getElementsByTagName("html")[0].className += " js";</script>
+		
+		<link rel="stylesheet" href="../css/styles.css">
+		<script>
+			// Picture element HTML5 shiv
+			document.createElement( "picture" );
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" 
+		integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg=" 
+		crossorigin="anonymous" async></script>
+	</head>  
+	
+	<body class="loading">
+		<div class="loading__wrapper is--visible">
+			<div class="loading__overlay styleAnim-translateOut" data-styleAnim-order="8" data-theme="black">
+				<div class="loading__move styleAnim-scaleIn styleAnim-scaleOut" data-styleAnim-order="1">
+					<div class="loading__lines">
+						<div class="loading__line"></div>
+						<div class="loading__line"></div> 
+						<div class="loading__line"></div>
+						<div class="loading__line"></div>
+						<div class="loading__line"></div> 
+						<div class="loading__line"></div>
+						<div class="loading__line"></div> 
+						<div class="loading__line"></div>
+						<div class="loading__line"></div>
+						<div class="loading__line"></div>
+						<div class="loading__line"></div>
+						<div class="loading__line"></div>
+					</div>
+					<div class="loading__text text-mega-2"><p class="text--sm">loading</p></div>
+				</div>
+			</div>
+		</div>  
+		
+	    
+
+
+<ul class="nav nav-styleguide">
+    <li class="nav-item"><a class="nav-link nav-styleguide__brand" style="color:#FFF; letter-spacing: -.25px; font-size: 20px!important" href="../index.html">TOBY BUI</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/index.html">1. Colors</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/typography.html">2. Typography</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/utilities.html">3. Utilities</a></li>
+    <li class="nav-item"><a class="nav-link  active " href="../styleguide/ui-elements.html">4. UI Elements&nbsp;</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/components.html">5. Components</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/layouts.html">6. Layouts</a></li>
+    <li class="nav-item"><a class="nav-link " href="../styleguide/pages.html">7. Pages</a></li>
+</ul>
+
+
+
+
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom-md">Buttons</h2>
+    
+    <div class="section__inner">
+        
+        <div class="flex flex-wrap flex-center flex-gap-xs">
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--primary btn--disabled">Disabled</button>
+        </div>
+        <div class="flex flex-wrap flex-center flex-gap-xs margin-top-xs">
+            <button class="btn btn--accent">Accent</button>
+            <button class="btn btn--accent btn--disabled">Disabled</button>
+        </div>
+        
+        <div class="flex flex-wrap flex-center flex-gap-xs margin-bottom margin-top-xs">
+            <button class="btn">Text</button>
+            <button class="btn btn--subtle">Subtle</button>
+        </div>
+        
+        <h4 class="text-center margin-bottom-xs margin-top-xs">Button Sizing</h4>
+        <ul class="flex flex-wrap flex-center flex-gap-xs">
+            <li><button class="btn btn--primary btn--sm">Button sm</button></li>
+            <li><button class="btn btn--primary">Button</button></li>
+            <li><button class="btn btn--primary btn--md">Button md</button></li>
+            <li><button class="btn btn--primary btn--lg">Button lg</button></li>
+        </ul>
+        
+        <h4 class="text-center margin-bottom-xs margin-top-xs">Button icons</h4>
+        <div class="flex flex-wrap flex-center flex-gap-xs">
+            <button class="btn btn--primary btn--icon-text">
+                <span>Next</span>
+                <svg aria-hidden="true" class="icon" viewBox="0 0 16 16"><title>arrow right</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="4.5,0.5 12,8 4.5,15.5 "></polyline></g></svg>
+            </button>
+            
+            <button class="btn btn--primary flex-gap-xxs">
+                <svg aria-hidden="true" class="icon icon--xs" viewBox="0 0 12 12"><title>edit</title><g><path d="M4.707,8.707l6-6a1,1,0,0,0,0-1.414l-1-1a1,1,0,0,0-1.414,0l-6,6a1,1,0,0,0-.188.26L1.293,9.707,4.447,8.9A1,1,0,0,0,4.707,8.707Z"></path> <path d="M11.5,11H.5a.5.5,0,0,0,0,1h11a.5.5,0,0,0,0-1Z" data-color="color-2"></path></g></svg>
+                <span>Edit</span>
+            </button>
+            
+            <button class="btn btn--accent btn--icon">
+                <svg class="icon" viewBox="0 0 16 16"><title>delete</title><g stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line><line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line></g></svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<section class="section margin-bottom-xl" data-section-name="styleguide">
+    <h2 class="text-center margin-bottom-xs margin-bottom-md">Forms</h2>
+    
+    <div class="section__inner">
+        
+        <form class="width-max-700 margin-x-auto">
+            <fieldset>
+                <legend class="form-legend">Form Legend</legend>
+                
+                <div class="margin-bottom-sm">
+                    <label class="form-label" for="inputName">Name:</label>
+                    <input class="form-control" required type="text" name="inputName" id="inputName">
+                </div>
+                
+                <div class="margin-bottom-sm">
+                    <label required class="form-label" for="inputEmail">Email:</label>
+                    <input class="form-control" type="email" name="inputEmail" id="inputEmail" placeholder="email@myemail.com">
+                </div>
+                
+                <div>
+                    <label class="form-label" for="textarea">Textarea:</label>
+                    <textarea class="form-control" name="textarea" id="textarea"></textarea>
+                </div>
+            </fieldset>
+        </form>
+        
+        <h4 class="text-center margin-top-md margin-bottom-sm">Form Status</h4>
+        <form class="width-max-700 margin-x-auto">
+            <fieldset>
+                <div class="margin-bottom-sm">
+                    <input class="form-control" required aria-invalid="true" type="text" name="inputName" id="inputName">
+                    <div role="alert" class="form__msg-error form__msg-error--is-visible"><p><strong>Error:</strong> this is an error message</p></div>
+                </div>
+            </fieldset>
+        </form>
+        
+        
+        <h4 class="text-center margin-top-md margin-bottom-sm">Radio and checkbox lists</h4>
+        <form class="width-max-700 margin-x-auto">
+            <div class="margin-bottom-md">
+                <fieldset>                    
+                    <ul class="radio-list">
+                        <li>
+                            <input type="radio" name="radioButton" id="radio1" checked>
+                            <label for="radio1">Choice 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, vero. Dolore et eveniet maxime hic tempora neque explicabo eaque doloremque!</label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="radioButton" id="radio2">
+                            <label for="radio2">Choice 2</label>
+                        </li>
+                        
+                        <li>
+                            <input type="radio" name="radioButton" id="radio3">
+                            <label for="radio3">Choice 3</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            
+            <div class="margin-bottom-md">
+                <fieldset>                    
+                    <div class="checkbox-list checkbox-list--inline">
+                        <div>
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Option 1</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Option 2</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Option 3</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+        
+    </div>
+</section>
+
+
+	
+		<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+		<script src="../js/scripts.js"></script>
+		<!-- <script src="./js/secondary.js"></script> -->
+	</body>
+
+</html>
