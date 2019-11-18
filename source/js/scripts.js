@@ -1,6 +1,5 @@
-
 // require('./polyfill');
-import Util from "./utils/Util";
+import Util from './utils/Util';
 // import Resizer from "./utils/Resizer";
 
 import imagesLoaded from 'imagesloaded';
@@ -8,22 +7,15 @@ import imagesLoaded from 'imagesloaded';
 import barba from './vendor/barba';
 import barbaCss from './vendor/barba-css';
 
+// tell Barba to use the css module
+barba.use(barbaCss);
 
-// document.addEventListener('lazybeforeunveil', function(e){
-//     var bg = e.target.getAttribute('data-bg');
-//     if(bg){
-//         e.target.style.backgroundImage = 'url(' + bg + ')';
-//     }
-// });
-
-imagesLoaded( document.body, function() {        
-    // Remove loading class from body 
-    // const loadingWrapper = document.querySelector('.loading__wrapper');
-    // if(Util.hasClass(document.body,'loading')) {
-    //     Util.removeClass(loadingWrapper, 'is--visible');
-    //     Util.addClass(loadingWrapper, 'is--invisible');
-    //     Util.removeClass(document.body, 'loading');
-    // }    
+// init Barba
+barba.init({
+  transitions: [
+    {
+      // css classes will look like `.fade-xxx-[-xxx]`
+      name: 'anim-fade',
+    },
+  ],
 });
-
-

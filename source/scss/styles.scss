@@ -45,6 +45,7 @@
 
 // 9-UTILS - These are the utility classes carrying !important that affect one piece of the DOM at a time
 // @import '9-utils/_util.*';
+@import '9-utils/_util.anim';
 
 // 10-TRUMPS - Parking nasty nested overrides to move on and fix later (hacks, Third-libraries)
 // @import '10-trumps/_override.*';

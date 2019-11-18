@@ -9,4 +9,4 @@
 			<img src="img/home.jpg" class="full full-img">
 		</section>
 	</main>
-{% endblock %}    
+{% endblock %}     

@@ -1,0 +1,23 @@
+// https://barba.js.org/docs/v2/user/css.html
+
+/* transition active state (same for leave and enter) */
+.anim-fade-leave-active,
+.anim-fade-enter-active {
+    transition: opacity 450ms ease;
+}
+
+// Current page fade in to out
+.anim-fade-leave {
+    opacity: 1;
+}
+.anim-fade-leave-to {
+    opacity: 0;
+}
+
+// Next page fade-out to in
+.anim-fade-enter {
+    opacity: 0;
+}
+.anim-fade-enter-to {
+    opacity: 1;
+}
