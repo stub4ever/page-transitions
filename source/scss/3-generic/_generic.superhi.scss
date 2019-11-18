@@ -40,6 +40,10 @@ body.feed {
     --nav-link-selected: rgba(255, 255, 255, 1);
     --nav-underline: rgba(255, 255, 255, 0.1);
     --nav-underline-hover: rgba(255, 255, 255, 1);
+
+    h1 {
+        color: var(--text-color);
+    }
 }
 
 header, section, footer {

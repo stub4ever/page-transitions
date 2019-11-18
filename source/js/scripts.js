@@ -29,8 +29,8 @@ barba.init({
   ],
   transitions: [
     {
-      // css classes will look like `.fade-xxx-[-xxx]`
-      name: 'anim-fade',
+      name: 'anim-fade', // css classes will look like `.anim-fade-xxx-[-xxx]`
+      once() {}, // Optional hooks that happend once
       // Data argument is an object passed to all transition hooks, view hooks subset and custom rules
       // eslint-disable-next-line no-unused-vars
       beforeEnter({ current, next, trigger }) { // Passed barba data agrument

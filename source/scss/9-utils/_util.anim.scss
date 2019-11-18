@@ -8,7 +8,8 @@
 
 /* transition active state (same for leave and enter) */
 .anim-fade-leave-active,
-.anim-fade-enter-active {
+.anim-fade-enter-active,
+.anim-fade-once-active { // add class for once
     transition: opacity var(--anim-timing) var(--anim-bezier), transform var(--anim-timing) var(--anim-bezier);
 }
 
@@ -27,12 +28,38 @@
 // "Next enter page" - Start Timeline 
 // - from opacity 0 to 1 => Fading in
 // - from y 30px to 0px => Moving Top
-.anim-fade-enter {
+.anim-fade-enter,
+.anim-fade-once { // add class for once
     opacity: 0;
     transform: translate(0, 30px);
 }
-.anim-fade-enter-to {
+.anim-fade-enter-to,
+.anim-fade-once-to { // add class for once
     opacity: 1;
     transform: translate(0, 0);
 }
 
+// Keyframe Timeline
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translate(0, 30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+// Add transitions once outside barba when load or refresh the page
+header h1,
+header p,
+header nav,
+footer {
+    animation: fade var(--anim-timing) var(--anim-bezier) both; // add before and after each animation starts
+}
+
+// add stacking delay
+header h1 { animation-delay: var(--anim-timing); }
+header p { animation-delay: calc(2 * var(--anim-timing)); }
+header nav { animation-delay: calc(3 * var(--anim-timing)); }
