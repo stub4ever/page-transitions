@@ -1,8 +1,8 @@
 {% extends 'layouts/layout.nunjucks' %}
 
 {% block content %}
-    <main data-barba="wrapper">
-        <section data-barba="container" class="feed">
+    <main data-barba="wrapper" > 
+        <section data-barba="container" data-barba-namespace="feed">  <!-- add data-barba-namespace to apply view 'feed' adding class on body -->
             <img src="/img/image2.jpg">
             <img src="/img/image3.jpg">
             <img src="/img/image4.jpg">

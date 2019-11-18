@@ -1,5 +1,4 @@
 {% extends 'layouts/layout.nunjucks' %}
-
 {% block content %}
 	<!-- https://barba.js.org/docs/v2/user/core.html -->
 	<main data-barba="wrapper">

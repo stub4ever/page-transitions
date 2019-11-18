@@ -8,11 +8,25 @@ import imagesLoaded from 'imagesloaded';
 import barba from './vendor/barba';
 import barbaCss from './vendor/barba-css';
 
+const bodyTag = document.querySelector("body");
+
 // tell Barba to use the css module
 barba.use(barbaCss);
 
 // init Barba
 barba.init({
+  // Views allow you to have some logic related to the content of a namespace
+  views: [
+    {
+      namespace: 'feed',
+      beforeEnter() {
+        bodyTag.classList.add('feed');
+      },
+      beforeLeave() {
+        bodyTag.classList.remove('feed');
+      },
+    },
+  ],
   transitions: [
     {
       // css classes will look like `.fade-xxx-[-xxx]`

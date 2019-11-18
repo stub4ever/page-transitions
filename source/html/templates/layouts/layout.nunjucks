@@ -43,14 +43,12 @@
 		integrity="sha256-iT+n/otuaeKCgxnASny7bxKeqCDbaV1M7VdX1ZRQtqg=" 
 		crossorigin="anonymous" async></script>
 	</head>  
-	
-	<body class="loading">
 
+	<body{% if bodyClass %} class="loading {{ bodyClass }}"{% endif %}>
 		{% include 'partials/header.nunjucks' %} 
 	    {% block content %}
 		{% endblock %}
 		{% include 'partials/footer.nunjucks' %} 
-	
 		<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 		<script src="./js/scripts.js"></script>
 		<!-- <script src="./js/secondary.js"></script> -->

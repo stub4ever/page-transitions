@@ -31,6 +31,7 @@ body {
     transition: background-color calc(3 * var(--timing)) var(--bezier);
 }
 
+
 body.feed {
     --background: #000011;
     --text-color: #ffffff;
